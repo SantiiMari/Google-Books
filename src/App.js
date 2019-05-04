@@ -14,6 +14,7 @@ function App() {
       <Nav />
       <Switch>
       <Route exact path="/" component={Search}/>
+    <Route component={NoMatch} />
       <Route exact path="/saved" component={Saved}/>
       
       {/* <InputField></InputField> */}
