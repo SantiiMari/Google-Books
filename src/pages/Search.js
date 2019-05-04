@@ -1,7 +1,7 @@
 import React from "react";
 import SearchForm from "../components/SearchForm";
 import ResultsContainer from "../components/ResultsContainer";
-import API from "../routes/API";
+import API from "../../Utils/API";
 
 class Search extends React.Component {
     constructor(props) {
