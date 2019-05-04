@@ -18,14 +18,13 @@ return(
                  authors={bookInfo.authors}
                  description={bookInfo.description}
                  link={bookInfo.canonicalVolumeLink}
-                 img={bookInfo.imageLinks}
                  path={props.path}
                  key={book.id}/>
   })}
   </div>
   );
 } else if(props.path === "/saved") {
-         if(props.savedBooks.length > 0) {
+         if (props.savedBooks.length > 0) {
              return(
                  <div id="resultsContainer">
                      <h3>Saved Books</h3>
@@ -35,7 +34,6 @@ return(
                          authors={book.authors}
                          description={book.description}
                          link={book.link}
-                         img={book.img}
                          id={book._id}
                          path={props.path}
                          key={book._id}/>
@@ -43,7 +41,7 @@ return(
                  </div>
              );
          } else {
-             return(
+             return (
                  <div id="resultsContainer">
                      <h3>Saved Books!</h3>
                      <p>Nothing yet....</p>
@@ -53,6 +51,6 @@ return(
 )
          }
 }
-}
+
 
 export default ResultsContainer;
