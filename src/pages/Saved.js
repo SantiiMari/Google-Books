@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ResultsContainer from "../components/ResultsContainer";
-import API from '../routes/API';
+import API from "../../Utils/API";
 
 export default class Saved extends Component  {
     constructor(props) {
