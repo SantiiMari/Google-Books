@@ -28,10 +28,12 @@ function SearchForm(props) {
     return(
         <div id="searchContainer">
             <h3>Book Search</h3>
-            <form id="bookSearch">
+            <form id="bookSearch" stye={{maxWidth:"50%"}}>
                 <label htmlFor="bookInput" form="bookSearch"><h2>Enter a book:</h2></label>
                 <br></br>
-                <input type="text" name="bookInput" id="bookInput" form="bookSearch" onChange={(e) => props.handleChange(e)} placeholder="Book Title" required/>
+                <div className="input-field col s12">
+                <textarea id="textarea1" className="materialize-textarea" onChange={(e) => props.handleChange(e)} placeholder="Book Title" required/>
+                </div>
                 <br></br>
                 <button className="btn red" type="submit" onClick={(e) => props.handleSearchClick(e)}>Search Books</button>
             </form>
@@ -40,4 +42,7 @@ function SearchForm(props) {
 }
 
 export default SearchForm;
+
+
+//<textarea id="textarea1" class="materialize-textarea"></textarea>
 
