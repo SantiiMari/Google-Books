@@ -8,9 +8,9 @@ export default class Nav extends Component{
     <div className="nav-wrapper">
       
       <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="https://www.linkedin.com/in/mary-santibanez-89342210b/">Linkedin</a></li>
+        <li><a href="https://github.com/SantiiMari">GitHub</a></li>
+        <li><a href="collapsible.html">BookSearch Api</a></li>
       </ul>
     </div>
   </nav>
